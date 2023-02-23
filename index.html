@@ -1,13 +1,43 @@
 <html>
   <body>
-    <h1>Cantidad</h1>
-    <form id="ventas-form">
+    <h1>Totalizador</h1>
+    <form id="sumar-form">
       <label for="primer-numero">Cantidad:</label>
-      <input type="number" id="cantidad" />
-      
-      <input type="submit" value="Mostrar" id="cantidad-button" />
+      <input type="number" id="primer-numero" />
+      <input type="submit" value="Hecho" id="cantidad-button" />
     </form>
     <div id="resultado-div"></div>
+
+    <form id="multiplicar-form">
+      <label for="primer-numero">Precio por item: </label>
+      <input type="number" id="primer-numeroMulti" />
+      <input type="submit" value="Hecho" />
+    </form>
+    <div id="resultado-divMulti"></div>
+
+    <form id="precioNeto-form">
+      <input type="submit" value="Calcular Precio Neto" />
+    </form>
+    <div id="resultado-divNeto"></div>
+
+    <form id="impuesto-form">
+      <label for="primer-numero">Ingrese el Estado: </label>
+      <input type="text" id="impuesto-estado" />
+      <input type="submit" value="ver impuesto" />
+    </form>
+    <div id="resultado-divImpues"></div>
+
+    <form id="descuento-form">
+      <label for="primer-numero">Descuento: </label>
+      <input type="submit" value="verificar descuento" />
+    </form>
+    <div id="resultado-divDescuen"></div>
+
+    <form id="total-form">
+      <label for="primer-numero">Final: </label>
+      <input type="submit" value="totalizar" />
+    </form>
+    <div id="resultado-divTotal"></div>
 
     <script type="module" src="./src/presenter.js"></script>
   </body>
